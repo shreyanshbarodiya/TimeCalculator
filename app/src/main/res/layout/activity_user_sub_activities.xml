@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shreyansh.learn.com.timecalculator.Admin.AdminActivities">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/name_activity"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="5"
+            android:text="Name of subactivity"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="labour"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="2dp"/>
+
+        <TextView
+            android:id="@+id/length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="length"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="2dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_margin="2dp"/>
+
+
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        >
+    </ListView>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView1"
+        android:text="Save n calculate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total time:     "
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/saveButton"
+        android:layout_below="@id/listView1"
+        />
+
+    <TextView
+        android:id="@+id/totalTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:layout_toRightOf="@id/textView"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/listView1"
+        />
+
+
+
+</RelativeLayout>
